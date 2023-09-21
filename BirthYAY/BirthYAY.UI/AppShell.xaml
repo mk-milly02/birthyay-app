@@ -3,12 +3,9 @@
     x:Class="BirthYAY.UI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:BirthYAY.UI"
+    xmlns:views="clr-namespace:BirthYAY.UI.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent ContentTemplate="{DataTemplate views:WelcomePage}" Route="WelcomePage" />
 
 </Shell>

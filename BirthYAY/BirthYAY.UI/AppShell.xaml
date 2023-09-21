@@ -7,5 +7,6 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent ContentTemplate="{DataTemplate views:WelcomePage}" Route="WelcomePage" />
+    <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" Route="LoginPage" />
 
 </Shell>

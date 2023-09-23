@@ -10,5 +10,11 @@ namespace BirthYAY.UI.ViewModels
         {
             await Shell.Current.GoToAsync("SignUpPage");
         }
+
+        [RelayCommand]
+        private static async Task Continue()
+        {
+            await Shell.Current.GoToAsync("LoginPasswordPage");
+        }
     }
 }

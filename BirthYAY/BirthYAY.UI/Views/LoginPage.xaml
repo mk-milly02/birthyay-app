@@ -13,7 +13,7 @@
             <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="25">
                 <Label Text="Welcome" FontSize="Large" FontFamily="OpenSansSemibold" HorizontalOptions="Center"/>
                 <Entry Placeholder="Email" Style="{StaticResource PrimaryEntry}" />
-                <Button Text="Continue" Style="{StaticResource PrimaryButton}"/>
+                <Button Text="Continue" Style="{StaticResource PrimaryButton}" Command="{Binding ContinueCommand}"/>
 
                 <Grid ColumnDefinitions="*,50,*" Padding="20,0">
                     <Line BackgroundColor="{StaticResource FontPurple}" HeightRequest="1"/>

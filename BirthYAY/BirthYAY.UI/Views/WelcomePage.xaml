@@ -4,7 +4,8 @@
              xmlns:viewmodels="clr-namespace:BirthYAY.UI.ViewModels"
              x:Class="BirthYAY.UI.Views.WelcomePage"
              x:DataType="viewmodels:WelcomePageViewModel"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
     
     <VerticalStackLayout Padding="20,45">
         <Grid RowDefinitions="608, *" RowSpacing="65">

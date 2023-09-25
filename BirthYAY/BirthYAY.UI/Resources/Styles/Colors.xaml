@@ -42,6 +42,7 @@
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
     <Color x:Key="FontPurple">#350F50</Color>
     <Color x:Key="Purple">#6E2588</Color>
+    <Color x:Key="Violet">#C850C0</Color>
 
     <LinearGradientBrush x:Key="PrimaryGradient">
         <GradientStop Color="#EE49FD" Offset="1" />

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="BirthYAY.UI.Views.HomePage"
+             Shell.NavBarIsVisible="False">
+    
+    <VerticalStackLayout Padding="20,45,20,0" Spacing="18">
+
+        <Grid ColumnDefinitions="*, 50">
+            <StackLayout>
+                <Label Text="Hi Jonas," FontFamily="OpenSansSemibold" FontSize="Medium"/>
+                <Label Grid.Row="1" Text="Here are today's updates:"/>
+            </StackLayout>
+            <Border Grid.Column="1" StrokeThickness="0" BackgroundColor="{x:StaticResource Purple}" Padding="6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <Image Source="avatar_ym.png"/>
+            </Border>
+        </Grid>
+
+        <SearchBar Placeholder="Search BirthYay"/>
+
+        <FlexLayout JustifyContent="SpaceBetween">
+            <RadioButton Content="Today" FontAttributes="Bold">
+                <RadioButton.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
+                </RadioButton.Behaviors>
+            </RadioButton>
+            <RadioButton Content="Week" FontAttributes="Bold">
+                <RadioButton.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
+                </RadioButton.Behaviors>
+            </RadioButton>
+            <RadioButton Content="Month" FontAttributes="Bold">
+                <RadioButton.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
+                </RadioButton.Behaviors>
+            </RadioButton>
+            <RadioButton Content="Year" FontAttributes="Bold">
+                <RadioButton.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
+                </RadioButton.Behaviors>
+            </RadioButton>
+        </FlexLayout> 
+
+    </VerticalStackLayout>
+    
+</ContentPage>

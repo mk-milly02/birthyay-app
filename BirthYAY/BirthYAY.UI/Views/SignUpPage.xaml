@@ -4,7 +4,8 @@
              xmlns:viewmodels="clr-namespace:BirthYAY.UI.ViewModels"
              x:Class="BirthYAY.UI.Views.SignUpPage"
              x:DataType="viewmodels:SignUpPageViewModel"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
 
     <VerticalStackLayout Padding="20,45">
         <Grid>

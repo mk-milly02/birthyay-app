@@ -5,8 +5,7 @@
              xmlns:controls="clr-namespace:BirthYAY.UI.Controls"
              x:Class="BirthYAY.UI.Views.LoginPage"
              x:DataType="viewmodels:LoginPageViewModel"
-             Shell.NavBarIsVisible="False"
-             Shell.TabBarIsVisible="False">
+             Shell.NavBarIsVisible="False">
 
     <VerticalStackLayout Padding="20,45">
         <Grid>

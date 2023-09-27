@@ -24,7 +24,7 @@
                                 <Label Text="YAY" FontSize="36" FontAttributes="Bold" TextColor="#74278F" FontFamily="Inter"/>
                             </HorizontalStackLayout>
                         </VerticalStackLayout>
-                        <Label Text="Never miss the important events of those you care so much about." TextColor="#350F50" FontFamily="OpenSansSemibold" />
+                        <Label Text="Never miss the important events of those you care so much about." TextColor="{AppThemeBinding Light=#350F50, Dark={StaticResource White}}" FontFamily="OpenSansSemibold" />
                     </VerticalStackLayout>
 
                     <Image Source="welcome_profiles"/>

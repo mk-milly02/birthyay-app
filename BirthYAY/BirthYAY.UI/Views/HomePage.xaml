@@ -20,30 +20,35 @@
             </Border>
         </Grid>
 
-        <SearchBar Placeholder="Search BirthYay"/>
+        <SearchBar Placeholder="Search BirthYay" PlaceholderColor="{AppThemeBinding Dark={StaticResource White}}"
+                   BackgroundColor="{StaticResource Gray300}"/>
 
-        <FlexLayout JustifyContent="SpaceBetween">
-            <RadioButton Content="Today" FontAttributes="Bold">
+        <FlexLayout JustifyContent="SpaceEvenly">
+            <RadioButton Content="Today" FontAttributes="Bold" ControlTemplate="{StaticResource CustomRadioButton}">
                 <RadioButton.Behaviors>
                     <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
                 </RadioButton.Behaviors>
             </RadioButton>
-            <RadioButton Content="Week" FontAttributes="Bold">
+            <RadioButton Content="Week" FontAttributes="Bold" ControlTemplate="{StaticResource CustomRadioButton}">
                 <RadioButton.Behaviors>
                     <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
                 </RadioButton.Behaviors>
             </RadioButton>
-            <RadioButton Content="Month" FontAttributes="Bold">
+            <RadioButton Content="Month" FontAttributes="Bold" ControlTemplate="{StaticResource CustomRadioButton}">
                 <RadioButton.Behaviors>
                     <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
                 </RadioButton.Behaviors>
             </RadioButton>
-            <RadioButton Content="Year" FontAttributes="Bold">
+            <RadioButton Content="Year" FontAttributes="Bold" ControlTemplate="{StaticResource CustomRadioButton}">
                 <RadioButton.Behaviors>
                     <toolkit:EventToCommandBehavior EventName="CheckedChanged"/>
                 </RadioButton.Behaviors>
             </RadioButton>
-        </FlexLayout> 
+        </FlexLayout>
+
+        <CarouselView>
+            
+        </CarouselView>
 
     </VerticalStackLayout>
     

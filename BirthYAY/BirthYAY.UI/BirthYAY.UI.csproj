@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-maccatalyst;net7.0-android33.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android33.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
@@ -31,7 +31,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\icon.png" Color="#F5F5F5" BaseSize="128,128" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#FFFFFF" BaseSize="100,100" />
 
 		<!-- Splash Screen -->
     <MauiSplashScreen Include="Resources\Splash\logo.svg" Color="#F5F5F5" BaseSize="128,100" />
@@ -48,12 +48,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\icon.png" />
 	  <None Remove="Resources\Images\bg_e.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Include="Resources\AppIcon\icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -63,6 +58,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Resources\Styles\AppStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\RoundedEntry.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

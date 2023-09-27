@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:BirthYAY.UI.ViewModels"
+             xmlns:controls="clr-namespace:BirthYAY.UI.Controls"
              x:Class="BirthYAY.UI.Views.LoginPage"
              x:DataType="viewmodels:LoginPageViewModel"
              Shell.NavBarIsVisible="False"
@@ -13,13 +14,13 @@
 
             <VerticalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="25">
                 <Label Text="Welcome" FontSize="Large" FontFamily="OpenSansSemibold" HorizontalOptions="Center"/>
-                <Entry Placeholder="Email" Style="{StaticResource PrimaryEntry}" />
+                <controls:RoundedEntry Placeholder="Email" />
                 <Button Text="Continue" Style="{StaticResource PrimaryButton}" Command="{Binding ContinueCommand}"/>
 
                 <Grid ColumnDefinitions="*,50,*" Padding="20,0">
-                    <Line BackgroundColor="{StaticResource FontPurple}" HeightRequest="1"/>
+                    <Line BackgroundColor="{AppThemeBinding Light={StaticResource FontPurple}, Dark={StaticResource White}}" HeightRequest="1"/>
                     <Label Grid.Column="1" Text="or" HorizontalOptions="Center"/>
-                    <Line Grid.Column="2" BackgroundColor="{StaticResource FontPurple}" HeightRequest="1"/>
+                    <Line Grid.Column="2" BackgroundColor="{AppThemeBinding Light={StaticResource FontPurple}, Dark={StaticResource White}}" HeightRequest="1"/>
                 </Grid>
 
                 <Button Text="Continue with Facebook" Style="{StaticResource PrimaryButton}">
